@@ -1,0 +1,31 @@
+#include <mega32a.h>
+#include <delay.h>
+
+void main(void)
+{
+    unsigned int adc_value;
+
+    // PB0..PB2 outputs (DIP switch)
+    DDRB = 0x07;
+
+    // ADC0 setup
+    ADMUX  = (1<<REFS0); // AVCC ref
+    ADCSRA = (1<<ADEN) | (1<<ADPS2) | (1<<ADPS1);
+
+    while (1)
+    {
+        // ÇÎÊÇÑ ÇáÞäÇÉ 3 (011)
+        PORTB = 0x03;
+
+        delay_us(50);   // æÞÊ ÇÓÊÞÑÇÑ
+
+        // ÇÞÑÃ ADC
+        ADCSRA |= (1<<ADSC);
+        while (ADCSRA & (1<<ADSC));
+        adc_value = ADCW;
+
+        // adc_value ÏáæÞÊí Ýíå ÞÑÇÁÉ ÇáÝæáÊ
+
+        delay_ms(500);
+    }
+}
