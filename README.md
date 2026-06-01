@@ -156,7 +156,7 @@ Before testing unknown ICs, verify the following:
 - Accuracy depends on wiring quality, supply stability, and IC socket mapping.
 - Protection circuitry should be added before testing unknown or sensitive ICs.
  
-## Suggested Repository Structure
+## Repository Structure
 
 ```text
 IC-Tester-ATmega32A/
