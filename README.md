@@ -103,7 +103,7 @@ The selected row is then normalized between 0 and 1 for clearer display.
 
 ## How to Use
 
-1. Connect the circuit according to the pin mapping table.
+1. Connect the circuit.
 2. Flash the firmware to the ATmega32A.
 3. Open a serial terminal.
 4. Set the terminal to 9600 baud, 8N1.
@@ -155,19 +155,7 @@ Before testing unknown ICs, verify the following:
 - Detects electrical signatures and ground-pin candidates, but does not fully identify IC functionality.
 - Accuracy depends on wiring quality, supply stability, and IC socket mapping.
 - Protection circuitry should be added before testing unknown or sensitive ICs.
-
-## Future Improvements
-
-- Add CSV logging on the connected PC.
-- Add support for 14-pin and 16-pin ICs using additional multiplexers.
-- Add a database for matching known IC signatures.
-- Add protection circuitry such as current limiting and clamp diodes.
-- Add a graphical PC interface for viewing the measurement matrix.
-
-## Project Status
-
-The project firmware and documentation are completed. The next step is uploading the source code, documentation, and supporting files to GitHub.
-
+ 
 ## Suggested Repository Structure
 
 ```text
@@ -178,16 +166,9 @@ IC-Tester-ATmega32A/
 │   └── IC_Tester_Documentation.pdf
 │
 ├── firmware/
-│   └── main.c
-│
-├── images/
-│   └── circuit_diagram.png
-│
-└── samples/
-    └── uart_output.txt
-```
+   └── main.c
 
-## Author
+```
 
 Ahmed Negm
 
