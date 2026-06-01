@@ -49,15 +49,6 @@ MUX1 is used to inject VCC into one selected IC pin. Its COM pin is connected to
 
 MUX2 is used to measure the voltage on each IC pin. Its COM pin is connected to ADC0 of the ATmega32A, allowing the firmware to read the selected pin voltage.
 
-## Pin Mapping
-
-| Signal | ATmega32A Pin | Connected To | Purpose |
-|---|---|---|---|
-| MUX1 S0-S2 | PD2-PD4 | MUX1 select pins | Select injection channel |
-| MUX2 S0-S2 | PD5-PD7 | MUX2 select pins | Select measurement channel |
-| MUX1 INH | PC4 | MUX1 inhibit pin | Enable or disable injection |
-| ADC0 | PA0 | MUX2 COM | Read selected IC pin voltage |
-| MUX1 COM | VCC | +5V | Inject VCC to selected channel |
 
 ## Operating Modes
 
