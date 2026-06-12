@@ -169,9 +169,3 @@ IC-Tester-ATmega32A/
    └── main.c
 
 ```
-
-Ahmed Negm
-
-## Acknowledgment
-
-This project was supervised by Dr. Hossam Eldin Mostafa Abdelbaki.
